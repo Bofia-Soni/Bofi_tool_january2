@@ -1,0 +1,245 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* Watermark */
+.watermark {
+    position: fixed;
+    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* Pulsanti in alto a destra */
+/*.top-buttons {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 60px;
+    right: 350px;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}*/
+
+#B{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 60px;
+    right: 250px;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+#O{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 60px;
+    right: 140px;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+#F{
+   width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 170px;
+    right: 250px;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+#I{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 170px;
+    right: 140px;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+.top-buttons .btn {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.top-buttons .btn:hover {
+    transform: scale(1.05);
+}
+
+
+  
+  
+/* Pannello a tendina */
+#side-panel {
+    position: fixed;
+    font-family: "Playwrite RO", cursive;  
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    line-height: 100%;
+    top: 50px;
+    right: -360px; /* nascosto */
+    width: 360px;
+    height: 100vh;
+    background: #522ca4;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.4s ease;
+    z-index: 15;
+}
+
+#side-panel.open {
+    right: 0;
+}
+
+/* Contenuto pannello */
+#panel-content {
+   /* padding-left: 20px;
+    padding-top: 250px;*/
+    width: 360px;
+    height: 100vh;
+    
+}
+
+
+
+#Beginning{
+    background-color: #CC2936;
+    text-align:left;
+    text-rendering: auto;
+    padding-left: 20px;
+    height: 170vh;
+    width: 360px;
+}
+
+#Originals{
+    background-color: #355070;
+    padding-left: 20px;
+    height: 170vh;
+    width: 360px;
+}
+
+#Font{
+    background-color: #589013;
+    padding-left: 20px;
+    height: 170vh;
+    width: 360px;
+}
+
+.frame_text{
+    border: 1px solid rgb(0, 0, 0);
+    width: 300px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    line-height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters_text{
+    border: 1px solid rgb(0, 0, 0);
+    column-count: 2;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    padding: 3px;
+    margin-top: 2px;
+    margin-right: 60px;
+    font-family: "Playwrite RO", cursive;
+
+}
+
+#Interact{
+    background-color: #F3B61F;
+    padding-left: 20px;
+    height: 170vh;
+    width: 360px;
+}
+
+
+
+
+
+
+/*sliders comandi e stile*/
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: inherit;
+  width: 250px;
+  height: 6px;
+  background: #000000;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* pallino (thumb) - Chrome, Safari */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* pallino - Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #CC2936;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* barra - Firefox */
+input[type="range"]::-moz-range-track {
+  background: #FFD500;
+  height: 6px;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+.filters_text input {
+  display:block;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>BofiTool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Watermark in basso a sinistra -->
+    <img src="sources/landing page 1.jpg" class="watermark" alt="Watermark">
+
+    <!-- Pulsanti in alto a destra -->
+    <div class="top-buttons">
+        <img src="sources/landing page 2.jpg" class="btn" id="B" data-panel="Beginning">
+        <img src="sources/landing page 3.jpg" class="btn" id="O" data-panel="Originals">
+        <img src="sources/landing page 4.jpg" class="btn" id="F" data-panel="Font">
+        <img src="sources/landing page 5.jpg" class="btn" id="I" data-panel="Interact">
+    </div>
+
+    <!-- Pannello a tendina -->
+    <div id="side-panel">
+        <div id="panel-content">
+            <div id="Beginning">
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <h2>Beginning</h2> <br> <br>
+                <label>Type something...</label>
+                <input type="text" value="Hello"><br>
+                <button class="button" style="background-color: #CC2936;">Randomize</button>
+                <button class="button" style="background-color: #CC2936;">Stop</button> <br> <br>
+                <label>Size</label>
+                <input type="range"  class="size-slider"  name="size"  min="0"  max="100"  value="50"><br><br>
+                <label>Letter Distance</label>
+                <input type="range"  class="distance-slider"  name="size"  min="0"  max="100"  value="50"><br> <br> 
+                <p class="frame_text">Welcome to the Bofi tool, an online archive of all the letters, signs, graffiti, writings, books, tags that were once written 
+                    and now in display in public plces around the world. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The bla bla bla bla bla bla</p> <br> 
+                
+                
+                <!--<input type="number" id="fontSize">miao</input>-->
+            </div>
+
+            <div id="Originals">
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <h2>Originals</h2> <br> <br>
+                <p class="frame_text">The projectbla bla bla
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat volptas </p> <br> <br>
+                
+                 <p style="font-family: Playwrite RO;font-weight: bold;">Category</p>
+                    <div class="filters_text">
+                   
+                    <input type="checkbox" id="signs">
+                    <label for="signs">Signs</label>
+
+                    <input type="checkbox" id="Poster">
+                    <label for="scripts">Poster</label>
+
+                    <input type="checkbox" id="packages">
+                    <label for="packages">Packages</label>
+
+                    <input type="checkbox" id="Tag">
+                    <label for="objects">Tag</label>
+
+                    <input type="checkbox" id="Book">
+                    <label for="graffiti">Book</label>
+
+                    <input type="checkbox" id="Inscriptions">
+                    <label for="tumbstones">Inscriptions</label>
+                    </div>
+            </div>
+
+            <!--allora questo di seguito serve per il sorting , puo essere che vadano cambiate le classi e il nome degli elementi-->
+            <!--<div class="items">
+                    <div class="item signs scripts">Elemento A</div>
+                    <div class="item objects graffiti">Elemento B</div>
+                    <div class="item packages">Elemento C</div>
+                    <div class="item tumbstones signs">Elemento D</div>
+            </div>-->
+
+            <div id="Font">
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <h2>Font</h2> <br> <br>
+                <p class="frame_text" id="font_text">The projectbla bla bla
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat volptas </p> <br> <br>
+            </div>
+
+            <div id="Interact">
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                <h2>Interact!</h2> <br> <br>
+                <label>Type something...</label>
+                <input type="text" value="Hello"><br>
+                <button class="button" style="background-color: #F3B61F;">Randomize</button>
+                <button class="button" style="background-color: #F3B61F;">Stop</button> <br> <br>
+                <label>Size</label>
+                <input type="range"  class="size-slider"  name="size"  min="0"  max="100"  value="50"><br><br>
+                <label>Letter Distance</label>
+                <input type="range"  class="distance-slider"  name="size"  min="0"  max="100"  value="50"><br> <br> 
+                <input type="checkbox">Show references
+
+            </div>
+            <!-- contenuto dinamico in futuro -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="controls.js"></script>
+</body>
+</html>
